@@ -80,4 +80,4 @@ Mobile responsive, no markdown asterisks in UI.
 ---
 
 Built with ❤️ at CareerBytes x June 27 Workshop
-Facilitated by [Samar Partap Passey](https://www.linkedin.com/in/samarpartap-passey)
+Facilitated by [Samar Partap Passey](https://www.linkedin.com/in/samar-passey/)
