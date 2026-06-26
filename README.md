@@ -1,21 +1,21 @@
-# 🤖 Build Your Own AI Interview Agent
+# Build Your Own AI Interview Agent
 ### CareerBytes Workshop — June 27, 2025
 
 Welcome! This guide has everything you need to build your own AI-powered interview coach today. No coding experience needed.
 
 ---
 
-## ✅ Before You Start
+## Before You Start
 
 1. Create a free account at [bolt.new](https://bolt.new)
 2. Create a free account at [claude.ai](https://claude.ai)
 3. Create a free account at [console.anthropic.com](https://console.anthropic.com) to get your API key
 
-> ⚠️ You will be given a shared Anthropic API key during the workshop. Swap it for your own free key after the event.
+> You will be given a shared Anthropic API key during the workshop. Swap it for your own free key after the event.
 
 ---
 
-## 🧠 How This Works
+## How This Works
 
 You're going to use **two AI tools together**:
 
@@ -26,7 +26,7 @@ The reason we use Claude first is simple: a vague prompt gives you a broken app.
 
 ---
 
-## 🗺️ The Full Workflow
+## The Full Workflow
 
 ```
 Your idea (one sentence)
@@ -37,7 +37,7 @@ Claude writes a detailed Bolt prompt
         ↓
 You paste it into Bolt
         ↓
-Working app ✅
+Working app 
 ```
 
 ---
@@ -129,7 +129,7 @@ The Claude prompt above automatically handles all 4 of these. That's why it work
 3. Paste it into the chat and hit enter
 4. Wait — this takes 5-10 minutes for a full app (~100K tokens)
 
-> 💡 Don't interrupt Bolt while it's building. If it stops mid-way, type: "Continue building. What files are left?"
+> Don't interrupt Bolt while it's building. If it stops mid-way, type: "Continue building. What files are left?"
 
 ---
 
@@ -142,7 +142,7 @@ Once Bolt finishes building:
 3. In Bolt's file tree, look for the `.env` file
 4. Replace `your-key-here` with your real API key
 
-> ⚠️ If you can't see the `.env` file, type in Bolt chat: "Show me the .env file and let me edit it"
+> If you can't see the `.env` file, type in Bolt chat: "Show me the .env file and let me edit it"
 
 ---
 
@@ -171,7 +171,7 @@ Once your base app is working, ask Bolt to add features:
 
 ---
 
-## 💡 The Example App
+## The Example App
 
 Here's the prompt used to build the example shown at the workshop. This is what the 4-question Claude conversation produced:
 
@@ -191,7 +191,7 @@ Home Screen
 A single centered card (max-width 680px, overlapping header by 48px) containing:
 - Text input labeled "Job Role" — required, placeholder: "e.g. Product Manager at a fintech startup"
 - A toggle link labeled "Add Job Description (optional)" — clicking reveals a textarea; clicking again hides it
-- A PDF upload zone labeled "Upload Resume (optional)" — on upload show filename and a "✕ Remove" button
+- A PDF upload zone labeled "Upload Resume (optional)" — on upload show filename and a " Remove" button
 - A "Start Interview" button — disabled until Job Role has at least one character
 - PDF accepts .pdf only; on failed extraction show: "Could not read this PDF, try another file" — continue without resume context
 
@@ -257,7 +257,7 @@ Technical Requirements — always follow these exactly:
 
 ---
 
-## 🔗 Useful Links
+## Useful Links
 
 - [Bolt.new](https://bolt.new) — Build your app
 - [Claude.ai](https://claude.ai) — Plan your app and generate your Bolt prompt
@@ -266,4 +266,4 @@ Technical Requirements — always follow these exactly:
 
 ---
 
-*Built with ❤️ at CareerBytes Workshop*
+*Built with  at CareerBytes Workshop*
