@@ -226,14 +226,15 @@ Backend & AI Logic
 API Call 1 — Question Generation
 - Triggered when user clicks "Start Interview"
 - Frontend sends to POST /api/generate-questions: jobRole, jobDescription (optional), resumeText (optional, extracted from PDF client-side using PDF.js)
-- Claude generates exactly 5 tailored interview questions
+- Claude generates exactly 5 behavioral interview questions in STAR format, tailored to the role, JD, and resume. Each one asks for a real past experience ("Tell me about a time when…").
 - Returns a plain JSON array of 5 question strings
 - Frontend saves array to localStorage immediately on receipt
 
 API Call 2 — Evaluation
 - Triggered after user submits answer to question 5
 - Frontend sends to POST /api/evaluate-answers: jobRole, questions (array of 5), answers (array of 5)
-- Claude returns: score (1–10), feedback (one paragraph), improvements (array of 3 strings)
+- Claude scores each answer against the STAR framework — Situation, Task, Action, Result — noting which components the candidate hit and which they missed
+- Claude returns: score (1–10), feedback (one paragraph that names the STAR elements they nailed and the ones they skipped), improvements (array of 3 strings, each tied to a weak or missing STAR element)
 - Strip all markdown from feedback and improvements before storing in state
 
 Edge Cases
