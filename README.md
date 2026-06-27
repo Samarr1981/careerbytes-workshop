@@ -267,4 +267,4 @@ Technical Requirements — always follow these exactly:
 
 ---
 
-*Built with  at CareerBytes Workshop*
+*Built at CareerBytes Workshop*
